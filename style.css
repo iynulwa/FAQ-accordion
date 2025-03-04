@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Work Sans";
+    src: url(./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: hsl(275, 100%, 97%);
+    font-family: "Work Sans";
+}
+
+main {
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    position: relative;
+    top: -8.5rem;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0%;
+}
+
+h1 {
+    font-weight: 800;
+    padding-left: 1rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+}
+
+h2:hover {
+    color: hsl(293, 80%, 35%);
+    cursor: pointer;
+}
+
+.faqheadcontainer {
+    display: flex;
+}
+
+.headcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+/* minus button should be hidden, add a class or id and set the display to hidden */
+.minus {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+        
+    main {
+        width: 65%;
+    }
+}
+
+
+.attribution { font-size: 14px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
