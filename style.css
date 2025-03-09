@@ -1,73 +1,110 @@
 @font-face {
-    font-family: "Work Sans";
-    src: url(./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
-    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+    font-family: "Work sans", sans-serif;
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf) format("truetype"),
+    url(./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf) format("truetype");
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Lightpink: hsl(275, 100%, 97%);
+    --Grayishpurple: hsl(292, 16%, 49%);
+    --Darkpurple: hsl(292, 42%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 body {
-    background-color: hsl(275, 100%, 97%);
     font-family: "Work Sans";
+    background-color: var(--Lightpink);
+
 }
 
-main {
-    background-color: white;
-    width: 40%;
-    margin: auto;
+.container {
+    width: 35rem;
+    max-width: 90%;
+    margin: 0 auto;
     padding: 2rem;
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
+    background-color: white;
     position: relative;
-    top: -8.5rem;
+    top: -9.5rem;
 }
 
-p {
-    font-size: 16px;
-    font-weight: 400;
-    padding: 0%;
+.faqcontainer {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    padding-left: 0;
 }
 
-h1 {
-    font-weight: 800;
+.line {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--Lightpink);
+}
+
+.star {
+    width: 2rem;
+    height: auto;
+}
+
+.faq {
+    font-size: 2.5rem;
     padding-left: 1rem;
+    color: var(--Darkpurple);
 }
 
-h2 {
-    font-weight: 600;
-    font-size: 1.2rem;
-    padding-right: 0.5rem;
+.accordion-item {
+    margin-bottom: 2rem;
 }
 
-h2:hover {
-    color: hsl(293, 80%, 35%);
+h3 {
+    text-align: left;
+}
+
+
+.question:hover {
     cursor: pointer;
-}
-
-.faqheadcontainer {
-    display: flex;
-}
-
-.headcontainer {
-    display: flex;
-    justify-content: space-between;
+    color: hsl(293, 80%, 35%);
 }
 
 button {
-    border: none;
     background-color: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-left: 0;
 }
 
-/* minus button should be hidden, add a class or id and set the display to hidden */
-.minus {
+p {
+    color: var(--Darkpurple);
+}
+
+.content {
     display: none;
 }
 
-@media (max-width: 600px) {
+.minus {
+    width: 1.5rem;
+    height: auto;
+    display: none;    
+}
 
-        
-    main {
-        width: 65%;
-    }
+.plus {
+    width: 1.5rem;
+    height: auto;
 }
 
 
-.attribution { font-size: 14px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@media (max-width: 375px) {
+
+    .container {
+        width: 15rem;
+    }
+}
