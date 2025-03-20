@@ -23,7 +23,7 @@ body {
 
 }
 
-.container {
+main {
     width: 35rem;
     max-width: 90%;
     margin: 0 auto;
@@ -66,6 +66,13 @@ h3 {
     text-align: left;
 }
 
+.question {
+    text-align: left;
+    font-family: "Work Sans";
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 
 .question:hover {
     cursor: pointer;
@@ -102,9 +109,10 @@ p {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
 
-    .container {
-        width: 15rem;
+    main {
+        width: 80%;
+        margin: auto;
     }
 }
